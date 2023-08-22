@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="x-icon" id="icon" href="https://tse1.mm.bing.net/th?id=OIP.hmULQc8Yu-o0w3ksaTmzqAHaHa&pid=Api&P=0&h=180" style="mix-blend-mode: multiply;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f02f7fa72a.js" crossorigin="anonymous"></script>
+    
+    <title>Temperature Convertor</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="https://tse1.mm.bing.net/th?id=OIP.hmULQc8Yu-o0w3ksaTmzqAHaHa&pid=Api&P=0&h=180">
+            <p>Temperature Convertor</p>
+        </header>
+        <div class="box">
+            <h2 class="title">Temperature Convertor</h2>
+            <div class="result">
+                <span class="resultHeading">Result (Celcius) </span>
+                <h2 class="celsiusValue" id="celsius">1</h2>
+            </div>
+            <div class="degreeType">
+                <div class="degreeField">
+                    <input type="number" name="degree" id="degree" placeholder="Degree" style="color: white; font-weight: 600;">
+                </div>
+                <div class="tempField" style="font-weight: 600;">
+                    <select name="temperatures" id="tempType" autocomplete="on">
+                        <option selected>Type</option>
+                        <option value="Fahrenheit" id="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin" id="kelvin">Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <button id="convertBtn" style="justify-content: space-between;">Convert</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

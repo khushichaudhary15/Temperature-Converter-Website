@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+.container{
+    background-image:url(https://tse4.mm.bing.net/th?id=OIP._i1A8QvP_Hgn6Z8GAt76QwHaFD&pid=Api&P=0&h=180);
+    height: 100vh;
+    width: 100%;
+    background-repeat:round;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon{
+    mix-blend-mode: multiply;
+}
+
+header {
+    background: #96bed7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: 0.6s;
+    align-items: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+header p{
+    font-family: 'Source Code Pro', monospace;;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+    /* filter: drop-shadow(15px 17px 5px black); */
+}
+
+.logo{
+    height: 50px;
+    width: 50px;
+    mix-blend-mode: multiply;
+    margin-right: 30px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.box{
+    width: 30%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    justify-content:center;
+    align-items: center;
+    background-color: #2d355e;
+    background: linear-gradient(45deg, black 0%,grey 100%);
+    border-radius: 50px;
+    color: #222;
+    font-size: 1rem;
+    /* backdrop-filter: blur(21px); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-shadow: -10px -10px 10px black;
+}
+
+.box:hover{
+    background: linear-gradient(to bottom, grey 0%, black 100%);
+    box-shadow: 10px 10px 10px black;
+}
+
+.title{
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    text-align: center;
+    margin: 20px 0;
+    color: white;
+}
+
+.resultHeading{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.celsiusValue{
+    color: white;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    transition: all .45s ease;
+}
+
+#degree{
+    color: white;
+    font-weight: 600;
+}
+
+.degreeType{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.degreeField{
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+}
+
+input{
+    outline: none !important ;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 10px black;
+}
+
+input, select{
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 8px;
+    margin-bottom: 15px;
+    outline: none;
+    border-color: black;
+    border-radius: 5px;
+}
+
+select{
+    outline: none !important ;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 10px black;
+}
+
+input:focus{
+    border: 1px solid #ffffff;
+}
+
+option{
+    background: #3c39e7;
+    color: #f6f6f6;
+}
+
+#convertBtn{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(108, 104, 104, 0), grey);
+    color: #f6f6f6;
+    padding: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 10px 10px;
+    transition: all .3s ease-in;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Source Code Pro', monospace;
+}
+
+#convertBtn:hover{
+    background: linear-gradient(to top,grey, rgba(108, 104, 104, 0));
+}
+
+
+
+@media screen and (max-width: 375px) {
+    header{
+        height: 10vh;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 107vh;
+        background-size: cover;
+    }
+
+    .box{
+        width: 90%;
+        height: 60vh;
+        border-radius: 45px;
+    }
+
+    .degreeType{
+        display: flex;
+        justify-content: center;
+    }
+
+    .degreeField{
+        width: 35%;
+        margin-right: 10px;
+    }
+}
